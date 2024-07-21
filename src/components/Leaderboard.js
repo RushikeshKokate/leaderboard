@@ -7,7 +7,19 @@ const Leaderboard = () => {
 
     return (
         <div className="leaderboard">
-            <h1>Leaderboard</h1>
+            <div>
+                <div className='left-side'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <h1>Leaderboard</h1>
+                <div className='right-side'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
             <ul>
                 {scores.map((score, index) => (
                     <ScoreItem key={index} score={score} />
